@@ -1,0 +1,16 @@
+try:
+    print("----try block starts")
+    no1=int(input("enter the number1:"))
+    no2=int(input("enter the number2:"))
+    res=no1//no2
+    print(res)
+    print("----try block ends")
+except ZeroDivisionError as zero:
+    print("-------except 1 block starts----")  
+    print(zero) 
+    print("-------except 1 block ends----")  
+
+except ValueError as value:
+    print("-------except 2 block starts----")  
+    print(value) 
+    print("-------except 2 block ends----")  
