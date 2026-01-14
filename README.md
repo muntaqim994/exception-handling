@@ -1,2 +1,2 @@
 # exception-handling
-it occurs during runtime error
+it handing error during execution o program
