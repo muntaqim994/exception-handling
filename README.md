@@ -1,2 +1,2 @@
 # exception-handling
-it handing error during execution o program
+ is  handing error during execution o program
