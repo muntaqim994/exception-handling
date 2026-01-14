@@ -1,0 +1,11 @@
+s1="hello students:"
+print(len(s1))
+try:
+    print(s1[4])
+except IndexError as index:
+    print(index)
+else:
+    print("ahdebf")
+
+finally :
+    print("something")
