@@ -1,0 +1,11 @@
+try :
+    print("-----try block starts-----")
+    e1=int(input("enter the interger type of data :"))
+    print(e1)
+    print("------try block ends----")
+except ValueError as value:
+    print("----except 1 block starts")
+    print(value)
+    print("-----except 1 block ends")
+else:
+    print("no exception")
