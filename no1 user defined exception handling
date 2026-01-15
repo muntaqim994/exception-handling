@@ -1,0 +1,13 @@
+class votingright(Exception):
+    pass
+try:
+    age=15
+    if age>=18:
+        print("u can vote")
+    else:
+        raise votingright("not eligible")
+except votingright as vote:
+    print(vote)
+
+finally:
+    print("something")
