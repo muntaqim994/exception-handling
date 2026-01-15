@@ -1,0 +1,53 @@
+class year_exception(Exception):
+    pass
+class degree_exception(Exception):
+    pass
+class stream_exception(Exception):
+    pass
+class percentage_exception(Exception):
+    pass
+class skill_exception(Exception):
+    pass
+class bond_exception(Exception):
+    pass
+class mock_exception(Exception):
+    pass
+
+year=int(input("enter ur passout:"))
+degree=input("enter ur degree:")
+stream=input("enter the stream:")
+percent=int(input("enter your percentage:"))
+skill1=input("enter your 1st skills:")
+skill2=input("enter your 2nd skills:")
+bond=input("are u ready to sign on 2 year bond:")
+rating=input("enter ur mock ratings:")
+
+if year==2024 or year==2025 or year==2026:
+    pass
+else:
+    raise year_exception("your year is not matching")
+if degree=="BE"  or degree=="B.TECH":
+    pass
+else:
+    raise degree_exception("year degree is not eligible")
+if stream =="CS" or stream=="IS" or stream =="IT":
+    pass
+else:
+    raise stream_exception("your stream is not eligible")
+if percent>=70:
+    pass
+else:
+    raise percentage_exception("your pecentage is low")
+
+if skill1=="python" and skill2==" sql" or skill1=="sql" or skill2=="python":
+    pass
+else:
+    raise skill_exception("your skills are not matching")
+if bond=="yes":
+    pass
+else:
+    raise bond_exception("bond not matches")
+if rating=="*":
+    print("you are added to the requirement")
+else:
+    raise mock_exception("your mock rating is low
