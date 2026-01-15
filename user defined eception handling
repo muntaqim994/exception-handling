@@ -1,0 +1,12 @@
+class AgeError(Exception):
+    def __init__(self,msg):
+        self.msg=msg
+
+try:
+    age = 15
+    if age < 18:
+        raise AgeError("Not eligible")
+# except AgeError as e:
+#     print(e)
+finally :
+    print("something")
