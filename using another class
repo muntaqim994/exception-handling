@@ -1,0 +1,18 @@
+class employee_exception(Exception):
+    pass
+
+try:
+    class employee:
+        def __init__(self, sal):
+            self.sal = sal
+
+        def getsal(self):
+            return self.sal   # ✅ return, not print
+
+    e = employee(10000)
+
+    if e.getsal() < 50000:
+        raise employee_exception("less sal")
+
+except employee_exception as b:
+    print("munta:", b)
